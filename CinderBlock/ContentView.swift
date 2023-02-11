@@ -12,19 +12,23 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                Button (
-                    action: {
-                        success = brick()
-                        if success {
-                            UIApplication.shared.alert(title: "Probably bricked.", body: "Your phone may or may not be fucked. Reboot to find out! :trol:", withButton: false)
-                        } else {
-                            UIApplication.shared.alert(title: "Possibly bricked.", body: "Your phone might be fucked. Reboot to find out! :trol:", withButton: false)
+                Section {
+                    Button (
+                        action: {
+                            success = brick()
+                            if success {
+                                UIApplication.shared.alert(title: "Probably bricked.", body: "Your phone may or may not be fucked. Reboot to find out! :trol:", withButton: false)
+                            } else {
+                                UIApplication.shared.alert(title: "Possibly bricked.", body: "Your phone might be fucked. Reboot to find out! :trol:", withButton: false)
+                            }
+                        },
+                        label: {
+                            Label("Oh yeah. Brick it.", systemImage: "arrow.right.circle")
                         }
-                    },
-                    label: {
-                        Label("Oh yeah. Brick it.", systemImage: "arrow.right.circle")
-                    }
-                )
+                    )
+                }
+                Section{}header:{Text("CinderBlock\nBy BomberFish")}
+            
             }
             .navigationTitle("CinderBlock")
         }
