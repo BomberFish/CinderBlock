@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var success = false
     var body: some View {
         NavigationView {
             List {
                 Button (
                     action: {
-                        print("Not Implemented")
+                        success = brick()
                     },
                     label: {
                         Label("Oh yeah. Brick it.", systemImage: "arrow.right.circle")
