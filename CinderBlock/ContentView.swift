@@ -16,7 +16,7 @@ struct ContentView: View {
                         print("Not Implemented")
                     },
                     label: {
-                        Text("Oh yeah. Brick it.")
+                        Label("Oh yeah. Brick it.", systemImage: "arrow.right.circle")
                     }
                 )
             }
