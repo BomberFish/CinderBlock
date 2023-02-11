@@ -9,13 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            List {
+                Button (
+                    action: {
+                        print("Not Implemented")
+                    },
+                    label: {
+                        Text("Oh yeah. Brick it.")
+                    }
+                )
+            }
+            .navigationTitle("CinderBlock")
         }
-        .padding()
     }
 }
 
