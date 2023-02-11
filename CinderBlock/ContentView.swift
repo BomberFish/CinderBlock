@@ -27,7 +27,7 @@ struct ContentView: View {
                         }
                     )
                 }
-                Section{}header:{Text("CinderBlock\nBy BomberFish")}
+                Section{}header:{Text("Made with ❤️ by BomberFish")}
             
             }
             .navigationTitle("CinderBlock")
