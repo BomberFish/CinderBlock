@@ -14,6 +14,11 @@
 		D60A47EE29983E8F0013F066 /* CinderBlockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60A47ED29983E8F0013F066 /* CinderBlockTests.swift */; };
 		D60A47F829983E8F0013F066 /* CinderBlockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60A47F729983E8F0013F066 /* CinderBlockUITests.swift */; };
 		D60A47FA29983E8F0013F066 /* CinderBlockUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60A47F929983E8F0013F066 /* CinderBlockUITestsLaunchTests.swift */; };
+		D60A4825299840700013F066 /* vm_unaligned_copy_switch_race.c in Sources */ = {isa = PBXBuildFile; fileRef = D60A481F299840700013F066 /* vm_unaligned_copy_switch_race.c */; };
+		D60A4826299840700013F066 /* grant_full_disk_access.m in Sources */ = {isa = PBXBuildFile; fileRef = D60A4820299840700013F066 /* grant_full_disk_access.m */; };
+		D60A4827299840700013F066 /* helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = D60A4821299840700013F066 /* helpers.m */; };
+		D60A482B299840AE0013F066 /* Haptic++.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60A4829299840AE0013F066 /* Haptic++.swift */; };
+		D60A482C299840AE0013F066 /* Alert++.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60A482A299840AE0013F066 /* Alert++.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,15 @@
 		D60A47F329983E8F0013F066 /* CinderBlockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CinderBlockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D60A47F729983E8F0013F066 /* CinderBlockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinderBlockUITests.swift; sourceTree = "<group>"; };
 		D60A47F929983E8F0013F066 /* CinderBlockUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinderBlockUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D60A481E299840700013F066 /* CinderBlock-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CinderBlock-Bridging-Header.h"; sourceTree = "<group>"; };
+		D60A481F299840700013F066 /* vm_unaligned_copy_switch_race.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vm_unaligned_copy_switch_race.c; sourceTree = "<group>"; };
+		D60A4820299840700013F066 /* grant_full_disk_access.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = grant_full_disk_access.m; sourceTree = "<group>"; };
+		D60A4821299840700013F066 /* helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = helpers.m; sourceTree = "<group>"; };
+		D60A4822299840700013F066 /* vm_unaligned_copy_switch_race.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vm_unaligned_copy_switch_race.h; sourceTree = "<group>"; };
+		D60A4823299840700013F066 /* helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = helpers.h; sourceTree = "<group>"; };
+		D60A4824299840700013F066 /* grant_full_disk_access.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = grant_full_disk_access.h; sourceTree = "<group>"; };
+		D60A4829299840AE0013F066 /* Haptic++.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Haptic++.swift"; sourceTree = "<group>"; };
+		D60A482A299840AE0013F066 /* Alert++.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alert++.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +110,8 @@
 			children = (
 				D60A47DC29983E8D0013F066 /* CinderBlockApp.swift */,
 				D60A47DE29983E8D0013F066 /* ContentView.swift */,
+				D60A4828299840AE0013F066 /* Extensions */,
+				D60A481D299840700013F066 /* Exploit */,
 				D60A47E029983E8F0013F066 /* Assets.xcassets */,
 				D60A47E229983E8F0013F066 /* Preview Content */,
 			);
@@ -125,6 +141,29 @@
 				D60A47F929983E8F0013F066 /* CinderBlockUITestsLaunchTests.swift */,
 			);
 			path = CinderBlockUITests;
+			sourceTree = "<group>";
+		};
+		D60A481D299840700013F066 /* Exploit */ = {
+			isa = PBXGroup;
+			children = (
+				D60A481E299840700013F066 /* CinderBlock-Bridging-Header.h */,
+				D60A481F299840700013F066 /* vm_unaligned_copy_switch_race.c */,
+				D60A4820299840700013F066 /* grant_full_disk_access.m */,
+				D60A4821299840700013F066 /* helpers.m */,
+				D60A4822299840700013F066 /* vm_unaligned_copy_switch_race.h */,
+				D60A4823299840700013F066 /* helpers.h */,
+				D60A4824299840700013F066 /* grant_full_disk_access.h */,
+			);
+			path = Exploit;
+			sourceTree = "<group>";
+		};
+		D60A4828299840AE0013F066 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D60A4829299840AE0013F066 /* Haptic++.swift */,
+				D60A482A299840AE0013F066 /* Alert++.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +296,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D60A482B299840AE0013F066 /* Haptic++.swift in Sources */,
+				D60A4826299840700013F066 /* grant_full_disk_access.m in Sources */,
 				D60A47DF29983E8D0013F066 /* ContentView.swift in Sources */,
 				D60A47DD29983E8D0013F066 /* CinderBlockApp.swift in Sources */,
+				D60A482C299840AE0013F066 /* Alert++.swift in Sources */,
+				D60A4825299840700013F066 /* vm_unaligned_copy_switch_race.c in Sources */,
+				D60A4827299840700013F066 /* helpers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +469,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -433,6 +478,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ca.bomberfish.CinderBlock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CinderBlock/Exploit/CinderBlock-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -454,6 +500,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,6 +509,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ca.bomberfish.CinderBlock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CinderBlock/Exploit/CinderBlock-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
